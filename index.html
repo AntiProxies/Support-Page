@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>AntiProxies</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">AntiProxies</a>
+          </div>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="https://antiproxies.com">Home</a></li>
+              <li><a href="#">Discord</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <div id="stattip-err" class="alert alert-warning hide" role="alert">
+          <b>Current status：</b>Some of our services are abnormal, we will fix them as soon as possible.
+        </div>
+        <div id="stattip-ok" class="alert alert-success hide" role="alert">
+          <b>Current status：</b>No abnormality was found during the normal operation of all services.
+        </div>
+        <div id="stattip-load" class="alert alert-info" role="alert">
+          <b>Current status：</b>Detecting statuses, please wait ..
+        </div>
+        <div class="table-responsive">
+          <table class="table table-hover check">
+            <thead>
+              <tr id="server-title">
+              </tr>
+            </thead>
+            <tbody id="server-container"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <p><span class="glyphicon glyphicon-refresh"></span> <span id="last-update"></span></p>
+      <p class="credit">Powered by <a href="https://github.com/AntiProxies/Support-Page" target="_blank">AntiProxies</a></p>
+    </div>
+  </div>
+  <script type="template/mustache" id="server-template">
+    <tr class="{{alert}}">
+      <td rowspan="2" class="sertitle">
+        <span class="label label-status label-{{label}}"><span class="glyphicon glyphicon-{{statusicon}}"></span> {{statustext}}</span>
+        <span class="wname">{{friendly_name}}</span>
+      </td>
+      {{#charts}}
+      <td class="center">
+      <span class="status-{{uptype}} set-tooltip" data-toggle="tooltip" data-placement="top" title="{{uptimetext}}"><span class="glyphicon glyphicon-{{upsign}}"></span></span>
+      </td>
+      {{/charts}}
+    </tr>
+    <tr class="{{alert}} barl">
+      <td colspan="8" class="barls">
+        <div class="progress">
+        {{#progress}}
+          <div class="progress-bar progress-bar-{{types}} set-tooltip" style="width: {{len}}%" data-toggle="tooltip" data-placement="top" title="{{stattip}}"></div>
+        {{/progress}}
+       </div>
+      </td>
+    </tr>
+  </script>
+  <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/mustache.min.js" type="text/javascript"></script>
+  <script src="js/config.js" type="text/javascript"></script>
+  <script src="js/support.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(myApp.dashboard.init);
+  </script>
+
+</body>
+</html>
