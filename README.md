@@ -1,5 +1,8 @@
 # AntiProxies
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/38e6b4a7-da86-4c22-8581-81e220d32a87/deploy-status)](https://app.netlify.com/sites/vibrant-goldberg-93e828/deploys)
+
+
 Online status statistics page with UptimeRobot as the data source.
 
 
