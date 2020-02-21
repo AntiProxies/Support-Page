@@ -207,7 +207,7 @@ myApp.dashboard = (function($) {
     while (stat = bar.pop()) {
       stattip = "" + Type2Word(parseInt(stat.typeid), true);
       if (stat.len == 1) {
-        stattip += " (近24hour)"
+        stattip += " (Nearly 24 hours)"
       } else {
         if (stat.right - stat.left < 1000 * 3540) {
           stattip += " (" + new Number((stat.right - stat.left) / (1000 * 60)).toFixed(0) + " minute)";
@@ -238,9 +238,9 @@ myApp.dashboard = (function($) {
       if (uptimes[a] >= 99.99) {
         uptimetext[a] = "availability 100%";
       } else if (minutes < 60) {
-        uptimetext[a] = "availability " + new Number(uptimes[a]).toFixed(2) + "%<br>malfunction " + new Number(minutes).toFixed(0) + " minute";
+        uptimetext[a] = "availability " + new Number(uptimes[a]).toFixed(2) + "%<br> malfunction " + new Number(minutes).toFixed(0) + " minutes";
       } else {
-        uptimetext[a] = "availability " + new Number(uptimes[a]).toFixed(2) + "%<br>malfunction " + new Number(hours).toFixed(1) + " hour";
+        uptimetext[a] = "availability " + new Number(uptimes[a]).toFixed(2) + "%<br> malfunction " + new Number(hours).toFixed(1) + " hours";
       }
     }
     //uptimes.push(data.alltimeuptimeratio);
