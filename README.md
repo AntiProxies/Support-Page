@@ -1,4 +1,10 @@
-# AntiProxies
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AntiProxies/Debut-Simple-changelog/master/images/logo-t.png">
+</p>
+
+<p align="center">
+  <h2>Support Page</h2>
+</p> 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/38e6b4a7-da86-4c22-8581-81e220d32a87/deploy-status)](https://app.netlify.com/sites/vibrant-goldberg-93e828/deploys)
 
