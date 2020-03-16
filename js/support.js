@@ -23,7 +23,7 @@ myApp.dashboard = (function($) {
     $_lastUpdate = $('#last-update');
 
     $_servertitle.append("<th style=\"width:21%\"></th>");
-    $_servertitle.append("<th style=\"width:9%\">Nearly 30 days</th>");
+    $_servertitle.append("<th style=\"width:9%\">Last 30 days</th>");
     for (var d = 6; d >= 0; d--) {
       tmpdate = new Date(+ new Date() - 86400000 * d);
       datestr = (tmpdate.getMonth() + 1) + "-" + tmpdate.getDate();

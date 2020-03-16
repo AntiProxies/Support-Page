@@ -22,6 +22,13 @@ Online status statistics page with UptimeRobot as the data source.
 
 [AntiProxies status](https://status.antiproxies.com)
 
+## Build with
+
+* Boostrap 3.3.7
+* Mustache.js 3.1.0
+* Jquery 1.12.4
+* FontAwesome 5.12.1
+
 ## License
 
 This work is licensed under [MIT](LICENSE.md)).
