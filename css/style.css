@@ -78,12 +78,8 @@
   }
   .container.header {
     position: relative;
-    width: 100% !important;
-    max-height: 40% !important;
-  }
-  div.header {
-    position: relative;
     height: 20em;
+    width: 100% !important;
     background-color:#d67070;
     border-color:#d67070 !important;
   }

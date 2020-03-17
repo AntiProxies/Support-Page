@@ -27,7 +27,7 @@ Online status statistics page with UptimeRobot as the data source.
 * Boostrap 3.3.7
 * Mustache.js 3.1.0
 * Jquery 1.12.4
-* FontAwesome 5.12.1
+* FontAwesome 4.7.0 - A bit modified
 
 ## License
 
