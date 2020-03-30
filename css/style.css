@@ -74,17 +74,17 @@
 }
 
 .barl .progress .progress-bar-default {
-	background-color: #efefef;
+	background-color: #EFEFEF;
 }
 
 .progress .tooltip .tooltip-inner .ttime {
-	color: #a3a3a3;
+	color: #A3A3A3;
 	font-size: 11px;
 }
 
 .credit {
 	font-size: 12px;
-	color: #bbb;
+	color: #BBB;
 }
 
 .credit a {
@@ -94,10 +94,10 @@
 .credit .pipe {
 	padding-left: 6px;
 	padding-right: 6px;
-	color: #ddd;
+	color: #DDD;
 }
 
-.container .header {
+.container.header {
 	position: relative;
 	height: 20em;
 	width: 100% !important;
