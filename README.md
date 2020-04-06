@@ -31,4 +31,4 @@ Online status statistics page with UptimeRobot as the data source.
 
 ## License
 
-This work is licensed under [MIT](LICENSE.md)).
+This work is licensed under [MIT](LICENSE.md).
