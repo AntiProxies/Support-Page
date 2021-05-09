@@ -9,7 +9,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/38e6b4a7-da86-4c22-8581-81e220d32a87/deploy-status)](https://app.netlify.com/sites/vibrant-goldberg-93e828/deploys)
 
 
-Online status statistics page with UptimeRobot as the data source.
+Online status statistics page with UptimeRobot as the data source. You can't use it on a free account anymore. (new API limitations) Because of that and the current status of the project this repo will be achieved for the time being.
 
 
 ## Instalation
